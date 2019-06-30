@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{%block content%}
+<div class="jumbotron text-center" style="background-color: #c220ac; color: rgb(7, 6, 6); padding: 100px 25px;">
+    <h1>Change The World Pitches</h1>
+</div>
+<div class="container">
+    <h1>Change The World Pitches</h1>
+    <hr>
+    <div class="row">
+        {{macro.displayPitches(pitches)}}
+    </div>
+</div>
+{%endblock%}
