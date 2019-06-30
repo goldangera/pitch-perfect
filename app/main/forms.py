@@ -11,4 +11,7 @@ class PitchForm(FlaskForm):
 
 class UpdateProfile(FlaskForm):
     bio = TextAreaField('Bio.',validators = [Required()])
+
+class CommentForm(FlaskForm):
+    text = TextAreaField('Your Feedback will be Very Important:',validators=[Required()])
     submit = SubmitField('Submit')
