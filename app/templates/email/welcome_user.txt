@@ -1,0 +1,3 @@
+Hello {{user.username}}
+Welcome to PITCH PERFECT ..... Home of perfect pitches.
+Your registration has been acknowledged.
