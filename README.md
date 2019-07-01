@@ -1,33 +1,51 @@
-# FLASK_STRUCTURE
-this is a script to every lazy developer or any other that seeks to save time creating the whole flask structure
+# APP NAME
 
-## SETUP
+## PITCH PERFECT
 
-### clone this repository
+# AUTHOR
 
-``` $ git clone https://github.com/boydndonga/FLASK_STRUCTURE.git ```
+Golda Nkirote Ngera
 
-### make sure you are at its required level
+# DESCRIPTION
 
-``` $ cd FLASK_STRUCTURE```
+This is an app that allows users to create,submit,vote pitches based on categories
 
-### make it executable
+#### User Stories
 
-``` $ chmod +x flaskApp.sh ```
+* A users can see pitches that other people have posted
+* A user can vote on posted pitches with either a down or an up vote
+* A user can comment on different pitches and leave feedback
+* A user can submit a pitch in any category
+* A user can submit to different categories
 
-**create a directory of your project and copy the flaskApp.sh file to that destination then execute it from there responding to the prompts to have your desired configuration**
 
-``` $ ./flaskApp.sh ```
+## Prerequisites
+* Python3.6
 
-| *Option* | *Output* 
---- | --- 
-Should i create a README? | creates a README.md file
-create with bootstrap only | initialize bootstrap for use in the app
-create with: bootstrap and db | initialize bootstrap and SQLAlchemy in your app
-create with: bootstrap,db,authentication | initialize bootstrap, SQLAlchemy and auth blueprnt in your app
+## Installation steps 
+* $ git clone https://github.com/goldangera/pitch-perfect.git
+* $ cd IP-Pitch
+* $ source virtual/bin/activate
+* Inside the manage.py module change the config_name parameter from 'production' to 'development' ie app = create_app('production') should be app = create_app('development')
+* $ ./start.sh 
 
-### Disclaimer
-In the start.sh file it has been set to run on python3.6, change this to your python version
-This script doesnt create a database for you ,it just installs the neccesary packages required to integrate a db seamlessly in the app
+# How it works
 
-![Sample Structure](flaskStructure.png)
+* A user needs to sign up
+* A user the needs to login in order to create,vote and post pitches.
+
+# Technologies Used
+* HTML5/CSS 
+* Bootstrap 
+* Python3.6
+* flask
+
+# Support and Contacts
+https://github.com/goldangera
+
+
+# License
+
+* MIT License
+
+Copyright (c) 2019 Golda Nkirote Ngera
