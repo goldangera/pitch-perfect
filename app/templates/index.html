@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% import 'macros.html' as macro %}
-<!-- Styles block -->
+
 
 {%block styles%}
     {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/first.css')}}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico')}}">
 
 {%endblock%}
-<!-- Content block -->
+
 {%block content%}
 <div class="jumbotron text-center" style="background-color: #c220a4; color: rgb(20, 19, 19); padding: 100px 25px;">
     <h1>WELCOME TO PITCH PERFECT</h1>
@@ -17,21 +17,21 @@
             <div class="well well-lg">
                 <h3>SHOOT YOUR SHOTS PITCHES</h3>
                 <p>Shoot your shots with right Catchy Phrases</p>
-                <a href="{{url_for('main.Shoot_ur_shot')}}" class="btn btn-primary -center">View</a>
+                <a href="/" class="btn btn-primary -center">View</a>
             </div>
         </div>
         <div class="col-md-4">
             <div class="well well-lg">
                 <h3>Change The World Pitches</h3>
                 <p>Let us hear how you intend to Change the world .</p>
-                <a href="{{url_for('main.change_the_world')}}" class="btn btn-primary -center">View</a>
+                <a href="/" class="btn btn-primary -center">View</a>
             </div>
         </div>
         <div class="col-md-4">
             <div class="well well-lg">
                 <h3>Sales Pitches</h3>
                 <p>Sell your product and let the world hear about you</p>
-                <a href="{{url_for('main.sales')}}" class="btn btn-primary -center">View</a>
+                <a href="/" class="btn btn-primary -center">View</a>
             </div>
         </div>
     </div>

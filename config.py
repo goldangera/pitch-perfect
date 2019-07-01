@@ -5,7 +5,7 @@ class Config:
     General configuration parent class
     '''
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://golda:123@localhost/pitchapp'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://golda:123@localhost/pitch'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
@@ -30,16 +30,13 @@ class TestConfig(Config):
     Args:
         Config: The parent config class with General config settings
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://golda:12@localhost/pitchapp'
-
+    pass
 class DevConfig(Config):
     '''
     Dev config child class
     Args:
         Config: The parent config class with general config settings
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://golda:123@localhost/pitchapp'
-
     DEBUG = True
 
 config_options = {
@@ -47,3 +44,17 @@ config_options = {
 'production':ProdConfig,
 'test':TestConfig
 }
+# class Config:
+#     pass
+
+# class ProdConfig(Config):
+#     pass
+
+# class TestConfig(Config):
+#     pass
+
+# class DevConfig(Config):
+#     DEBUG = True
+
+# config_options ={"production":ProdConfig,"default":DevConfig,"testing":TestConfig}
+
